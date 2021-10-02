@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
+    siteUrl: "https://www.sendexapi.com",
     title: "sendex-website",
   },
-  plugins: [],
+  plugins: ['gatsby-plugin-postcss'],
 };
