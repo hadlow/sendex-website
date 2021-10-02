@@ -1,0 +1,23 @@
+{
+  "name": "sendex-website",
+  "version": "0.1.0",
+  "description": "The website for Sendex",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hadlow/sendex-website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hadlow/sendex-website/issues"
+  },
+  "homepage": "https://sendexapi.com",
+  "devDependencies": {
+    "autoprefixer": "^10.3.6",
+    "postcss": "^8.3.8",
+    "tailwindcss": "^2.2.16"
+  }
+}
