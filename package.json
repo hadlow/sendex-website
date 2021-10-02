@@ -1,23 +1,22 @@
 {
   "name": "sendex-website",
-  "version": "0.1.0",
-  "description": "The website for Sendex",
+  "version": "1.0.0",
+  "private": true,
+  "description": "sendex-website",
+  "author": "Billy Hadlow",
+  "keywords": [
+    "gatsby"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/hadlow/sendex-website.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/hadlow/sendex-website/issues"
-  },
-  "homepage": "https://sendexapi.com",
-  "devDependencies": {
-    "autoprefixer": "^10.3.6",
-    "postcss": "^8.3.8",
-    "tailwindcss": "^2.2.16"
+  "dependencies": {
+    "gatsby": "^3.13.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
   }
 }
