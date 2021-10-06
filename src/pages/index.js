@@ -1,5 +1,7 @@
 import * as React from "react"
 
+import Button from '../components/Button'
+
 const IndexPage = () => {
   return (
     <>
@@ -24,6 +26,17 @@ const IndexPage = () => {
           </div>
         </div>
 
+        <div className="grid md:grid-cols-4 py-12 text-center">
+          <div className="md:col-span-2 md:col-start-2">
+            <h1 className="text-4xl font-extrabold mb-3">Test your RESTful backend from the command line</h1>
+
+            <h2 className="font-semibold leading-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</h2>
+
+            <div className="mt-4">
+              <Button type="a" href="/docs/get-started" color="orange" className="mt-4">Get started</Button>
+            </div>
+          </div>
+        </div>
       </main>
     </>
   )
