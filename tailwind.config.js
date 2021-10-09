@@ -17,6 +17,7 @@ module.exports = {
     fontFamily: {
       sans: ['Inter', 'sans-serif'],
       serif: ['serif'],
+      mono: ['Monaco', 'ui-monospace', 'SFMono-Regular', 'Menlo', 'Consolas', 'Liberation Mono', 'Courier New', 'monospace']
     },
     extend: {},
   },

@@ -1,7 +1,5 @@
 import * as React from "react"
 
-import Button from '../components/Button'
-
 const IndexPage = () => {
   return (
     <>
@@ -19,21 +17,23 @@ const IndexPage = () => {
             <div className="ml-6">
               <a href="https://github.com/hadlow/sendex">
                 <svg xmlns="http://www.w3.org/2000/svg" width="38.373" height="37.426" viewBox="0 0 38.373 37.426">
-                  <path id="Octicons-mark-github" d="M19.186,0a19.187,19.187,0,0,0-6.068,37.39c.959.168,1.319-.408,1.319-.911,0-.456-.024-1.967-.024-3.573-4.821.887-6.068-1.175-6.451-2.254A6.977,6.977,0,0,0,6,27.94c-.672-.36-1.631-1.247-.024-1.271a3.84,3.84,0,0,1,2.95,1.967,4.1,4.1,0,0,0,5.588,1.583,4.036,4.036,0,0,1,1.223-2.566C11.464,27.173,7,25.518,7,18.179A7.467,7.467,0,0,1,8.97,13.023a6.894,6.894,0,0,1,.192-5.084s1.607-.5,5.276,1.967a18.089,18.089,0,0,1,9.593,0c3.669-2.494,5.276-1.967,5.276-1.967a6.894,6.894,0,0,1,.192,5.084,7.424,7.424,0,0,1,1.967,5.156c0,7.363-4.485,8.994-8.754,9.473a4.544,4.544,0,0,1,1.3,3.55c0,2.566-.024,4.629-.024,5.276,0,.5.36,1.1,1.319.911A19.2,19.2,0,0,0,19.186,0Z" fill="#fff" fill-rule="evenodd"/>
+                  <path id="Octicons-mark-github" d="M19.186,0a19.187,19.187,0,0,0-6.068,37.39c.959.168,1.319-.408,1.319-.911,0-.456-.024-1.967-.024-3.573-4.821.887-6.068-1.175-6.451-2.254A6.977,6.977,0,0,0,6,27.94c-.672-.36-1.631-1.247-.024-1.271a3.84,3.84,0,0,1,2.95,1.967,4.1,4.1,0,0,0,5.588,1.583,4.036,4.036,0,0,1,1.223-2.566C11.464,27.173,7,25.518,7,18.179A7.467,7.467,0,0,1,8.97,13.023a6.894,6.894,0,0,1,.192-5.084s1.607-.5,5.276,1.967a18.089,18.089,0,0,1,9.593,0c3.669-2.494,5.276-1.967,5.276-1.967a6.894,6.894,0,0,1,.192,5.084,7.424,7.424,0,0,1,1.967,5.156c0,7.363-4.485,8.994-8.754,9.473a4.544,4.544,0,0,1,1.3,3.55c0,2.566-.024,4.629-.024,5.276,0,.5.36,1.1,1.319.911A19.2,19.2,0,0,0,19.186,0Z" fill="#fff" fillRule="evenodd"/>
                 </svg>
               </a>
             </div>
           </div>
         </div>
 
-        <div className="grid md:grid-cols-4 py-12 text-center">
+        <div className="grid md:grid-cols-4 py-48 text-center">
           <div className="md:col-span-2 md:col-start-2">
             <h1 className="text-4xl font-extrabold mb-3">Test your RESTful backend from the command line</h1>
 
             <h2 className="font-semibold leading-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</h2>
 
-            <div className="mt-4">
-              <Button type="a" href="/docs/get-started" color="orange" className="mt-4">Get started</Button>
+            <div className="flex justify-center mt-12">
+              <div className="flex bg-blue-primary text-white rounded px-6 py-3 font-light font-mono mr-4">$ npm i -g sendex <svg className="ml-4" width="16" aria-hidden="true" focusable="false" data-prefix="far" data-icon="copy" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M433.941 65.941l-51.882-51.882A48 48 0 0 0 348.118 0H176c-26.51 0-48 21.49-48 48v48H48c-26.51 0-48 21.49-48 48v320c0 26.51 21.49 48 48 48h224c26.51 0 48-21.49 48-48v-48h80c26.51 0 48-21.49 48-48V99.882a48 48 0 0 0-14.059-33.941zM266 464H54a6 6 0 0 1-6-6V150a6 6 0 0 1 6-6h74v224c0 26.51 21.49 48 48 48h96v42a6 6 0 0 1-6 6zm128-96H182a6 6 0 0 1-6-6V54a6 6 0 0 1 6-6h106v88c0 13.255 10.745 24 24 24h88v202a6 6 0 0 1-6 6zm6-256h-64V48h9.632c1.591 0 3.117.632 4.243 1.757l48.368 48.368a6 6 0 0 1 1.757 4.243V112z"></path></svg></div>
+
+              <a href="/docs/get-started" className="bg-orange text-white rounded px-8 py-3 font-semibold">Get started</a>
             </div>
           </div>
         </div>
