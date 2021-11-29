@@ -1,6 +1,8 @@
 import * as React from "react"
 
-const Button = ({ as, size, bg, text, children, ...rest }) => {
+const Button = ({ as, size, theme, children, ...rest }) => {
+  let bg = ''
+  let text = ''
   let fontSize = ''
   let padding = ''
 
@@ -8,7 +10,7 @@ const Button = ({ as, size, bg, text, children, ...rest }) => {
     case 'sm':
       fontSize = 'text-sm'
       padding = 'px-6 py-2'
-      break;
+      break
 
     case 'lg':
       fontSize = 'text-lg'
@@ -20,7 +22,18 @@ const Button = ({ as, size, bg, text, children, ...rest }) => {
       padding = 'px-8 py-3'
   }
 
-  const className = `bg-${bg} text-${text} ${fontSize} ${padding} font-semibold rounded`
+  switch (theme) {
+    case 'orange':
+      bg = 'bg-orange'
+      text = 'text-white'
+      break
+
+    default:
+      bg = 'bg-blue-primary'
+      text = 'text-white'
+  }
+
+  const className = `${bg} ${text} ${fontSize} ${padding} font-semibold rounded`
   const Tag = `${as}`
 
   return (
