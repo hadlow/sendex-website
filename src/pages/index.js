@@ -45,7 +45,20 @@ const IndexPage = () => {
         <div className="grid grid-cols-2 gap-4 my-10">
           <Card
             theme="bg-yellow text-blue-dark"
-            icon={``}
+            icon={
+              <div className="flex place-items-center justify-center rounded-full bg-blue-dark w-16 h-16">
+                <svg xmlns="http://www.w3.org/2000/svg" width="45.512" height="34.897" viewBox="0 0 45.512 34.897">
+                  <g id="stack-of-square-papers" transform="translate(0 -35.441)">
+                    <g id="Group_2" data-name="Group 2" transform="translate(0 35.441)">
+                      <path id="Path_2" data-name="Path 2" d="M.737,45.963l21.543,9.22a1.19,1.19,0,0,0,.477.1,1.221,1.221,0,0,0,.477-.1l21.542-9.22a1.213,1.213,0,0,0-.046-2.249L23.187,35.521a1.207,1.207,0,0,0-.862,0L.783,43.714a1.213,1.213,0,0,0-.046,2.249Zm22.019-8.011,18.3,6.962-18.3,7.835-18.3-7.835Z" transform="translate(0 -35.441)" fill="#fff"/>
+                      <path id="Path_3" data-name="Path 3" d="M.738,127.519l22.019,9.425,22.018-9.425a1.213,1.213,0,0,0-.954-2.231l-21.065,9.017L1.691,125.289a1.213,1.213,0,1,0-.954,2.231Z" transform="translate(-0.001 -111.75)" fill="#fff"/>
+                      <path id="Path_4" data-name="Path 4" d="M.738,159.918l22.019,9.425,22.018-9.425a1.213,1.213,0,0,0-.954-2.23L22.757,166.7,1.691,157.688a1.213,1.213,0,1,0-.954,2.23Z" transform="translate(-0.001 -139.297)" fill="#fff"/>
+                      <path id="Path_5" data-name="Path 5" d="M.738,192.321l22.019,9.425,22.018-9.425a1.213,1.213,0,0,0-.954-2.23l-21.065,9.017L1.691,190.091a1.213,1.213,0,1,0-.954,2.23Z" transform="translate(-0.001 -166.849)" fill="#fff"/>
+                    </g>
+                  </g>
+                </svg>
+              </div>
+            }
             title="See the docs"
             description="View the Sendex docs to find out all that you need to get the most out of Sendex."
             cta="View documentation →"
@@ -54,7 +67,11 @@ const IndexPage = () => {
 
           <Card
             theme="bg-blue-primary text-white"
-            icon={``}
+            icon={
+              <svg xmlns="http://www.w3.org/2000/svg" className="w-16 h-16" width="72.203" height="70.421" viewBox="0 0 72.203 70.421">
+                <path id="Octicons-mark-github" d="M36.1,0A36.1,36.1,0,0,0,24.684,70.353c1.805.316,2.482-.767,2.482-1.715,0-.857-.045-3.7-.045-6.724-9.07,1.67-11.417-2.211-12.139-4.242-.406-1.038-2.166-4.242-3.7-5.1-1.264-.677-3.069-2.347-.045-2.392,2.843-.045,4.874,2.617,5.551,3.7,3.249,5.46,8.439,3.926,10.515,2.978a7.594,7.594,0,0,1,2.3-4.829c-8.033-.9-16.426-4.016-16.426-17.825a14.05,14.05,0,0,1,3.7-9.7,12.973,12.973,0,0,1,.361-9.567s3.023-.948,9.928,3.7a34.036,34.036,0,0,1,18.051,0c6.9-4.693,9.928-3.7,9.928-3.7a12.973,12.973,0,0,1,.361,9.567,13.968,13.968,0,0,1,3.7,9.7c0,13.854-8.439,16.923-16.471,17.825,1.309,1.128,2.437,3.294,2.437,6.679,0,4.829-.045,8.709-.045,9.928,0,.948.677,2.076,2.482,1.715A36.12,36.12,0,0,0,36.1,0Z" fill="#fff" fill-rule="evenodd"/>
+              </svg>
+            }
             title="Sendex is on GitHub"
             description="Sendex is open-source. Star and watch Sendex on GitHub, and even contribute to making Sendex even better."
             cta="View on GitHub →"
