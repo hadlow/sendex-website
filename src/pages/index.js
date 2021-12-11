@@ -1,4 +1,4 @@
-import * as React from "react"
+import React, { useState } from "react"
 
 import Button from '../components/Button'
 import Footer from '../components/Footer'
@@ -10,8 +10,14 @@ import runTerminal from '../images/run-terminal.svg'
 import peekTerminal from '../images/peek-terminal.svg'
 
 const IndexPage = () => {
+  const [showCopySuccess, setShowCopySuccess] = useState(false)
+
   const copyInstall = () => {
-    
+    const command = 'npm i -g sendex'
+
+    navigator.clipboard.writeText(command)
+
+    setShowCopySuccess(true)
   }
 
   return (
@@ -48,6 +54,8 @@ const IndexPage = () => {
 
               <Button as="a" href="https://docs.sendexapi.com/getting-started/installing-sendex" theme="orange">Get started</Button>
             </div>
+
+            {showCopySuccess && <div className="mt-4">Copied to clipboard!</div>}
           </div>
         </div>
 
@@ -55,13 +63,13 @@ const IndexPage = () => {
           
         </div>
 
-        <img src={newTerminal} />
+        <img src={newTerminal} alt="New request terminal" />
 
-        <img src={requestConfig} />
+        <img src={requestConfig} alt="Request configuration file" />
 
-        <img src={runTerminal} />
+        <img src={runTerminal} alt="Run request terminal" />
 
-        <img src={peekTerminal} />
+        <img src={peekTerminal} alt="Peek request terminal" />
 
         <div className="grid grid-cols-2 gap-4 mb-16">
           <Card
