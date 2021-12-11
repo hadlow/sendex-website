@@ -1,6 +1,8 @@
 import * as React from "react"
 
 import Button from '../components/Button'
+import Footer from '../components/Footer'
+import Card from '../components/Card'
 
 const IndexPage = () => {
   return (
@@ -14,7 +16,7 @@ const IndexPage = () => {
           </svg>
 
           <div className="flex items-center ml-auto font-semibold">
-            <a href="https://docs.sendexapi.com/">Documentation</a>
+            <a href="https://docs.sendexapi.com">Documentation</a>
 
             <div className="ml-6">
               <a href="https://github.com/hadlow/sendex">
@@ -39,6 +41,28 @@ const IndexPage = () => {
             </div>
           </div>
         </div>
+
+        <div className="grid grid-cols-2 gap-4 my-10">
+          <Card
+            theme="bg-yellow text-blue-dark"
+            icon={``}
+            title="See the docs"
+            description="View the Sendex docs to find out all that you need to get the most out of Sendex."
+            cta="View documentation →"
+            link="https://docs.sendexapi.com"
+          />
+
+          <Card
+            theme="bg-blue-primary text-white"
+            icon={``}
+            title="Sendex is on GitHub"
+            description="Sendex is open-source. Star and watch Sendex on GitHub, and even contribute to making Sendex even better."
+            cta="View on GitHub →"
+            link="https://github.com/hadlow/sendex"
+          />
+        </div>
+
+        <Footer />
       </main>
     </>
   )
