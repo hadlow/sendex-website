@@ -4,7 +4,16 @@ import Button from '../components/Button'
 import Footer from '../components/Footer'
 import Card from '../components/Card'
 
+import requestConfig from '../images/request-config.svg'
+import newTerminal from '../images/new-terminal.svg'
+import runTerminal from '../images/run-terminal.svg'
+import peekTerminal from '../images/peek-terminal.svg'
+
 const IndexPage = () => {
+  const copyInstall = () => {
+    
+  }
+
   return (
     <>
       <title>Sendex - A lightweight API testing tool</title>
@@ -35,14 +44,26 @@ const IndexPage = () => {
             <h2 className="font-semibold leading-7">Sendex is an API development tool that lives in your project source &amp; stays in sync with Git. Run configuration from your terminal.</h2>
 
             <div className="flex justify-center mt-12">
-              <div className="flex bg-blue-primary text-white rounded px-6 py-3 font-light font-mono mr-4">$ npm i -g sendex <svg className="ml-4" width="16" aria-hidden="true" focusable="false" data-prefix="far" data-icon="copy" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M433.941 65.941l-51.882-51.882A48 48 0 0 0 348.118 0H176c-26.51 0-48 21.49-48 48v48H48c-26.51 0-48 21.49-48 48v320c0 26.51 21.49 48 48 48h224c26.51 0 48-21.49 48-48v-48h80c26.51 0 48-21.49 48-48V99.882a48 48 0 0 0-14.059-33.941zM266 464H54a6 6 0 0 1-6-6V150a6 6 0 0 1 6-6h74v224c0 26.51 21.49 48 48 48h96v42a6 6 0 0 1-6 6zm128-96H182a6 6 0 0 1-6-6V54a6 6 0 0 1 6-6h106v88c0 13.255 10.745 24 24 24h88v202a6 6 0 0 1-6 6zm6-256h-64V48h9.632c1.591 0 3.117.632 4.243 1.757l48.368 48.368a6 6 0 0 1 1.757 4.243V112z"></path></svg></div>
+              <div className="flex bg-blue-primary text-white rounded px-6 py-3 font-light font-mono mr-4">$ npm i -g sendex <svg onClick={copyInstall} className="cursor-pointer ml-4" width="16" aria-hidden="true" focusable="false" data-prefix="far" data-icon="copy" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M433.941 65.941l-51.882-51.882A48 48 0 0 0 348.118 0H176c-26.51 0-48 21.49-48 48v48H48c-26.51 0-48 21.49-48 48v320c0 26.51 21.49 48 48 48h224c26.51 0 48-21.49 48-48v-48h80c26.51 0 48-21.49 48-48V99.882a48 48 0 0 0-14.059-33.941zM266 464H54a6 6 0 0 1-6-6V150a6 6 0 0 1 6-6h74v224c0 26.51 21.49 48 48 48h96v42a6 6 0 0 1-6 6zm128-96H182a6 6 0 0 1-6-6V54a6 6 0 0 1 6-6h106v88c0 13.255 10.745 24 24 24h88v202a6 6 0 0 1-6 6zm6-256h-64V48h9.632c1.591 0 3.117.632 4.243 1.757l48.368 48.368a6 6 0 0 1 1.757 4.243V112z"></path></svg></div>
 
               <Button as="a" href="https://docs.sendexapi.com/getting-started/installing-sendex" theme="orange">Get started</Button>
             </div>
           </div>
         </div>
 
-        <div className="grid grid-cols-2 gap-4 my-10">
+        <div className="flex py-16">
+          
+        </div>
+
+        <img src={newTerminal} />
+
+        <img src={requestConfig} />
+
+        <img src={runTerminal} />
+
+        <img src={peekTerminal} />
+
+        <div className="grid grid-cols-2 gap-4 mb-16">
           <Card
             theme="bg-yellow text-blue-dark"
             icon={
@@ -69,7 +90,7 @@ const IndexPage = () => {
             theme="bg-blue-primary text-white"
             icon={
               <svg xmlns="http://www.w3.org/2000/svg" className="w-16 h-16" width="72.203" height="70.421" viewBox="0 0 72.203 70.421">
-                <path id="Octicons-mark-github" d="M36.1,0A36.1,36.1,0,0,0,24.684,70.353c1.805.316,2.482-.767,2.482-1.715,0-.857-.045-3.7-.045-6.724-9.07,1.67-11.417-2.211-12.139-4.242-.406-1.038-2.166-4.242-3.7-5.1-1.264-.677-3.069-2.347-.045-2.392,2.843-.045,4.874,2.617,5.551,3.7,3.249,5.46,8.439,3.926,10.515,2.978a7.594,7.594,0,0,1,2.3-4.829c-8.033-.9-16.426-4.016-16.426-17.825a14.05,14.05,0,0,1,3.7-9.7,12.973,12.973,0,0,1,.361-9.567s3.023-.948,9.928,3.7a34.036,34.036,0,0,1,18.051,0c6.9-4.693,9.928-3.7,9.928-3.7a12.973,12.973,0,0,1,.361,9.567,13.968,13.968,0,0,1,3.7,9.7c0,13.854-8.439,16.923-16.471,17.825,1.309,1.128,2.437,3.294,2.437,6.679,0,4.829-.045,8.709-.045,9.928,0,.948.677,2.076,2.482,1.715A36.12,36.12,0,0,0,36.1,0Z" fill="#fff" fill-rule="evenodd"/>
+                <path id="Octicons-mark-github" d="M36.1,0A36.1,36.1,0,0,0,24.684,70.353c1.805.316,2.482-.767,2.482-1.715,0-.857-.045-3.7-.045-6.724-9.07,1.67-11.417-2.211-12.139-4.242-.406-1.038-2.166-4.242-3.7-5.1-1.264-.677-3.069-2.347-.045-2.392,2.843-.045,4.874,2.617,5.551,3.7,3.249,5.46,8.439,3.926,10.515,2.978a7.594,7.594,0,0,1,2.3-4.829c-8.033-.9-16.426-4.016-16.426-17.825a14.05,14.05,0,0,1,3.7-9.7,12.973,12.973,0,0,1,.361-9.567s3.023-.948,9.928,3.7a34.036,34.036,0,0,1,18.051,0c6.9-4.693,9.928-3.7,9.928-3.7a12.973,12.973,0,0,1,.361,9.567,13.968,13.968,0,0,1,3.7,9.7c0,13.854-8.439,16.923-16.471,17.825,1.309,1.128,2.437,3.294,2.437,6.679,0,4.829-.045,8.709-.045,9.928,0,.948.677,2.076,2.482,1.715A36.12,36.12,0,0,0,36.1,0Z" fill="#fff" fillRule="evenodd"/>
               </svg>
             }
             title="Sendex is on GitHub"
