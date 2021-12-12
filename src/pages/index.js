@@ -4,8 +4,7 @@ import Button from '../components/Button'
 import Footer from '../components/Footer'
 import Card from '../components/Card'
 
-import requestConfig from '../images/request-config.svg'
-import newTerminal from '../images/new-terminal.svg'
+import newSteps from '../images/new-steps.svg'
 import runTerminal from '../images/run-terminal.svg'
 import peekTerminal from '../images/peek-terminal.svg'
 
@@ -59,17 +58,33 @@ const IndexPage = () => {
           </div>
         </div>
 
-        <div className="flex py-16">
-          
+        <div className="flex flex-col py-20 text-center">
+          <div className="w-full md:w-1/2 mb-8 mx-auto">
+            <h3 className="font-semibold text-2xl mb-4">Configure requests in YAML</h3>
+
+            <p className="leading-7">All requests are configured using a YAML config file. Set all the parameters of the request including headers and body in this file.</p>
+          </div>
+
+          <div className="mx-auto">
+            <img src={newSteps} alt="New request terminal and YAML" />
+          </div>
         </div>
 
-        <img src={newTerminal} alt="New request terminal" />
+        <div className="grid md:grid-cols-12 py-28">
+          <div className="col-span-6 md:pr-36">
+            <h3 className="font-semibold text-2xl mb-6 mt-6">Send requests in your terminal</h3>
 
-        <img src={requestConfig} alt="Request configuration file" />
+            <p className="mb-6 leading-7">Sending requests is as easy as 1 command in your terminal. Just specify the file and view the response below. Responses are also saved in the sendex folder.</p>
 
-        <img src={runTerminal} alt="Run request terminal" />
+            <p className="leading-7">Requests can either be ran and the response saved as a txt file, or the response can be outputted to the console.</p>
+          </div>
 
-        <img src={peekTerminal} alt="Peek request terminal" />
+          <div className="col-span-6">
+            <img src={runTerminal} alt="Run request terminal" className="mb-10" />
+
+            <img src={peekTerminal} alt="Peek request terminal" />
+          </div>
+        </div>
 
         <div className="grid grid-cols-2 gap-4 mb-16">
           <Card
