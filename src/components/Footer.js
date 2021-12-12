@@ -11,7 +11,7 @@ const Footer = ({ ...rest }) => {
 
       <div className="flex">
         <div className="flex-1">
-          <div className="mt-8">This website does not track you or use cookies. The only metric I care about is stars on GitHub. So, if you appreciate not being tracked, star Sendex on GitHub :)</div>
+          <div className="mt-8">This website does not track you or use cookies. The only metric I care about is stars on GitHub. So, star <a href="https://github.com/hadlow/sendex">Sendex</a> on GitHub :)</div>
       
           <div className="mt-6 mb-10">Copyright &copy; Sendex 2021</div> 
         </div>

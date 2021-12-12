@@ -31,6 +31,14 @@ module.exports = {
       mono: ['Monaco', 'ui-monospace', 'SFMono-Regular', 'Menlo', 'Consolas', 'Liberation Mono', 'Courier New', 'monospace']
     },
     extend: {},
+    container: {
+      screens: {
+         sm: "100%",
+         md: "100%",
+         lg: "1024px",
+         xl: "1280px"
+      }
+    }
   },
   variants: {
     extend: {},
