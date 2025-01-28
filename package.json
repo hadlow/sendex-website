@@ -1,28 +1,21 @@
 {
   "name": "sendex-website",
-  "version": "1.0.0",
-  "private": true,
-  "description": "sendex-website",
-  "author": "Billy Hadlow",
-  "keywords": [
-    "gatsby"
-  ],
+  "type": "module",
+  "version": "0.0.1",
   "scripts": {
-    "develop": "gatsby develop",
-    "start": "gatsby develop",
-    "build": "gatsby build",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
   "dependencies": {
-    "gatsby": "^3.13.1",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1"
-  },
-  "devDependencies": {
-    "autoprefixer": "^10.3.6",
-    "gatsby-plugin-postcss": "^4.14.0",
-    "postcss": "^8.3.8",
-    "tailwindcss": "^2.2.16"
+    "@astrojs/check": "^0.9.4",
+    "@astrojs/starlight": "^0.28.4",
+    "@astrojs/tailwind": "^5.1.5",
+    "astro": "^4.15.3",
+    "sharp": "^0.32.5",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.6.3"
   }
 }
