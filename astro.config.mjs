@@ -6,8 +6,13 @@ import tailwind from '@astrojs/tailwind';
 
 // https://astro.build/config
 export default defineConfig({
+	site: 'https://sendex.dev',
 	integrations: [starlight({
 		title: 'Sendex Docs',
+		logo: {
+			src: './src/assets/logo.svg',
+			replacesTitle: true,
+		},
 		social: {
 			github: 'https://github.com/hadlow/sendex',
 		},
