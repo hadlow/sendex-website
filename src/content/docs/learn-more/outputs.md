@@ -1,5 +1,5 @@
 ---
-title: Sendex outputs - Sendex
+title: Sendex outputs
 description: Sendex outputs
 ---
 

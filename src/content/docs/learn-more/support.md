@@ -1,5 +1,5 @@
 ---
-title: Support - Sendex
+title: Support
 description: Sendex support
 ---
 

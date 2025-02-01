@@ -1,5 +1,5 @@
 ---
-title: Introduction - Sendex
+title: Introduction
 description: What is Sendex?
 ---
 

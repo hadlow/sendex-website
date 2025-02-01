@@ -1,5 +1,5 @@
 ---
-title: Installation - Sendex
+title: Installation
 description: How to install Sendex
 ---
 

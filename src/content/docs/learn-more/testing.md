@@ -1,5 +1,5 @@
 ---
-title: End-to-end testing - Sendex
+title: End-to-end testing
 description: Sendex end-to-end testing
 ---
 

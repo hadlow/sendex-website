@@ -1,5 +1,5 @@
 ---
-title: Optional flags - Sendex
+title: Optional flags
 description: Sendex CLI optional flags
 ---
 

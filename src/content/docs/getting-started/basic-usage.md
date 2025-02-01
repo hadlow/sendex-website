@@ -1,5 +1,5 @@
 ---
-title: Basic usage - Sendex
+title: Basic usage
 description: Basic guide on using Sendex
 ---
 

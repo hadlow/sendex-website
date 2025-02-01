@@ -1,5 +1,5 @@
 ---
-title: Request configuration - Sendex
+title: Request configuration
 description: Sendex request configuration
 ---
 
