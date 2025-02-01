@@ -9,10 +9,10 @@ Although Sendex doesn't have any built in testing features, the CLI based design
 
 ```bash
 #!/bin/bash
-output=$(go run main.go run examples/get-todo.yml --raw)
-file_content=$(cat examples/get-todo.yml.out)
+output=$(sendex run tests/get-todo.yml --raw)
+desired_output=$(cat tests/get-todo.output)
 
-if [[ "$output" == "$file_content" ]]; then
+if [[ "$output" == "$desired_output" ]]; then
     echo "PASS: test matches expected output"
 else
     echo "FAIL: test does not match output"
