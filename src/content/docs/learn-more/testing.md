@@ -12,10 +12,10 @@ Although Sendex doesn't have any built in testing features, the CLI based design
 output=$(sendex run tests/get-todo.yml --raw)
 desired_output=$(cat tests/get-todo.output)
 
-if [[ "$output" == "$desired_output" ]]; then
-    echo "PASS: test matches expected output"
+if [ "$output" = "$desired_output" ]; then
+    echo "PASS: get-todo matches expected output"
 else
-    echo "FAIL: test does not match output"
+    echo "FAIL: get-todo does not match output"
     exit 1
 fi
 ```
