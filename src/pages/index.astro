@@ -39,8 +39,11 @@ import { Code } from '@astrojs/starlight/components';
     </div>
   </div>
 
-  <div>
-    <div class="rounded" style="background-color: #282A36">
+  <div class="relative mb-12">
+    <img src="/dots.svg" class="hidden md:block absolute -mt-8 -ml-8 z-0" />
+    <img src="/dots.svg" class="hidden md:block absolute -right-8 -bottom-8 z-0" />
+
+    <div class="relative z-2 rounded-lg border border-white/25" style="background-color: #282A36">
       <div class="py-2 px-3 border-b border-gray-900">
         <img src="/mac-bar.svg" width="54" />
       </div>
@@ -80,6 +83,10 @@ Content-Type: application/json; charset=utf-8
   "completed": false
 }`} lang="sh" class="bg-gray-900 rounded border-primary-light border mb-2"
       />
+  </div>
+
+  <div class="rounded bg-primary-light mt-12 px-4 py-3">
+    
   </div>
 
   <div class="mt-12 pt-12 border-t-4 border-blue-primary">
