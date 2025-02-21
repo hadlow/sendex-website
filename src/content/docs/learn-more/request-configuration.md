@@ -12,7 +12,7 @@ description: Sendex request configuration
 | endpoint | string | URL of your endpoint | http://localhost:8000/blog/1 |
 | headers | list | List of headers in format `- Header-Name: value` | `- Content-Type: application/json` |
 | body | string | Simple string containing body data | `{ id: 123 }` |
-| whitelist-headers | list | List of headers you want to show, will remove any other header and keep the output clean | `- Content-Type` |
+| allow-headers | list | List of headers you want to show, will remove any other header and keep the output clean | `- Content-Type` |
 
 ## Examples
 
@@ -54,7 +54,7 @@ endpoint: https://jsonplaceholder.typicode.com/todos/{id} # use ID value here
 headers:
   - Content-Type: application/json
   - Accept: application/json
-whitelist-headers:
+allow-headers:
   - Nil
 ```
 
@@ -68,7 +68,7 @@ endpoint: https://jsonplaceholder.typicode.com/todos/{id} # use ID value here
 headers:
   - Content-Type: application/json
   - Accept: application/json
-whitelist-headers:
+allow-headers:
   - Content-Type
 ```
 
