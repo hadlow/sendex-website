@@ -3,7 +3,7 @@ title: Installation
 description: How to install Sendex
 ---
 
-## Installation
+### Homebrew installation
 
 Install Sendex via Homebrew Tap:
 

@@ -3,7 +3,7 @@ title: Sendex outputs
 description: Sendex outputs
 ---
 
-## Different output types
+### Different output types
 
 With Sendex, you can specify whether you want to output to the terminal, or save to a file. This can be done with either the `run` or `save` commands.
 
@@ -21,7 +21,7 @@ sendex save requests/get-todo.yml
 
 This will default the save path to `requests/get-todo.yml.out`.
 
-## Specify output file path
+### Specify output file path
 
 To specify where to save the output, use the `--output` flag.
 
@@ -29,7 +29,7 @@ To specify where to save the output, use the `--output` flag.
 sendex save requests/get-todo.yml --output=responses/get-todo.txt
 ```
 
-## Output flags
+### Output flags
 
 With both `run` and `save`, you can narrow down which is outputted. For example, the `--body` flag will only show the body of the output, and leave out the status and headers.
 

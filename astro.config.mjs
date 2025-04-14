@@ -29,6 +29,7 @@ export default defineConfig({
 				label: 'Learn more',
 				items: [
 					{ label: 'Outputs', slug: 'learn-more/outputs' },
+					{ label: 'Environment variables', slug: 'learn-more/environment-variables' },
 					{ label: 'Request configuration', slug: 'learn-more/request-configuration' },
 					{ label: 'Optional flags', slug: 'learn-more/optional-flags' },
 					{ label: 'End-to-end testing', slug: 'learn-more/testing' },

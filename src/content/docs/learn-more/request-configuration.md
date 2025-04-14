@@ -3,7 +3,7 @@ title: Request configuration
 description: Sendex request configuration
 ---
 
-## List of parameters that can be used
+### List of parameters that can be used
 
 | Parameter | Type | Description | Example |
 | --------- | ---- | ----------- | ------- |
@@ -14,9 +14,9 @@ description: Sendex request configuration
 | body | string | Simple string containing body data | `{ id: 123 }` |
 | allow-headers | list | List of headers you want to show, will remove any other header and keep the output clean | `- Content-Type` |
 
-## Examples
+### Examples
 
-### Simple get
+#### Simple get
 
 ```yml
 method: GET
@@ -26,7 +26,7 @@ headers:
   - Accept: application/json
 ```
 
-### Get with args
+#### Get with args
 
 ```yml
 args:
@@ -44,7 +44,7 @@ Args can be used on the run command.
 sendex run get-example.yml id=5
 ```
 
-### Get hiding all headers from output
+#### Get hiding all headers from output
 
 ```yml
 args:
@@ -58,7 +58,7 @@ allow-headers:
   - Nil
 ```
 
-### Get with only listed headers being shown
+#### Get with only listed headers being shown
 
 ```yml
 args:
@@ -72,7 +72,7 @@ allow-headers:
   - Content-Type
 ```
 
-### Simple post
+#### Simple post
 
 ```yml
 method: POST
@@ -88,7 +88,7 @@ headers:
   - Accept: application/json
 ```
 
-### Post with args
+#### Post with args
 
 ```yml
 args:

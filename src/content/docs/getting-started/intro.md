@@ -3,11 +3,11 @@ title: Introduction
 description: What is Sendex?
 ---
 
-## What is Sendex?
+### What is Sendex?
 
 Sendex is a lightweight, file-based tool to make requests to your API. Sendex can be used as a lightweight alternative to Postman. With Sendex, your requests are stored in YAML files in your project's source code. This means whenever your backend changes, your request config files can change with it, keeping everything consistent.
 
-## How does Sendex work?
+### How does Sendex work?
 
 An example request file would look something like:
 

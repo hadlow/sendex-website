@@ -3,7 +3,7 @@ title: Basic usage
 description: Basic guide on using Sendex
 ---
 
-## Create a new request
+### Create a new request
 
 Requests can be created using Sendex via the `new` command. This command will create a file at the specified file path using a standard template which you can use as a starting point.
 
@@ -13,7 +13,7 @@ sendex new requests/get-todo.yml
 
 This command will create a file at `requests/get-todo.yml` using the default GET template.
 
-## Editing your request
+### Editing your request
 
 Opening the file will give us this:
 
@@ -39,7 +39,7 @@ allow-headers:
 
 If you're just trying out Sendex, feel free to use a test API, such as [JSON Placeholder](https://jsonplaceholder.typicode.com). Replace the default endpoint with `https://jsonplaceholder.typicode.com/todos/{id}`.
 
-## Running a request
+### Running a request
 
 Once your request file has been updated for your API, it can then be ran using:
 
