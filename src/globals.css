@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+    --color-primary-dark: #293241;
+    --color-primary-mid: #617B9D;
+    --color-primary-light: #9BC0DA;
+    --color-secondary: #C75940;
+}
+
+@utility container {
+    margin-inline: auto;
+    max-width: 900px;
+    width: 100%;
+    padding-inline: 1rem;
+
+    @variant sm {
+        max-width: 100%;
+    }
+
+    @variant md {
+        max-width: 100%;
+    }
+
+    @variant lg {
+        max-width: 900px;
+    }
+
+    @variant xl {
+        max-width: 900px;
+    }
+}
