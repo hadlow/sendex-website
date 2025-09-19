@@ -80,6 +80,8 @@ import { Code } from "@astrojs/starlight/components";
     </div>
   </div>
 
+  <!-- <div class="h-72 w-full rounded-full bg-radial from-white from-0% to-transparent to-20%"></div> -->
+
   <div class="relative mb-24">
     <svg
       class="hidden md:block absolute -mt-8 -ml-8 z-0"
@@ -739,9 +741,6 @@ import { Code } from "@astrojs/starlight/components";
       </defs>
     </svg>
 
-    <div class="absolute -m-12 bg-radial from-white from-100% to-white to-100%">
-    </div>
-
     <div
       class="relative z-2 rounded-lg border border-white/25"
       style="background-color: #282A36"
@@ -825,9 +824,20 @@ import { Code } from "@astrojs/starlight/components";
   <div class="mb-24">
     <h2 class="text-3xl font-bold pt-6 mb-4">Getting started</h2>
 
+    <p class="mb-3">Install Sendex via Homebrew:</p>
+
+    <Code
+      title={"Terminal"}
+      code={`brew tap hadlow/sendex
+brew install sendex`}
+      lang="sh"
+      class="bg-gray-900 rounded border-primary-mid border mb-2"
+    />
+
     <p class="mb-3">An example request file would look something like:</p>
 
     <Code
+      title={"get-todo.yml"}
       code={`args:
   - id: 1 # specify 1 as default
 method: GET
@@ -838,8 +848,7 @@ headers:
 allow-headers: # only show these headers in the output
   - Content-Type`}
       lang="yaml"
-      title={"get-todo.yml"}
-      class="bg-gray-900 rounded border-primary-mid border mb-4"
+      class="bg-gray-900 rounded border-primary-mid border mb-3"
     />
 
     <p class="mb-3">This request can be called with:</p>
@@ -859,7 +868,25 @@ Content-Type: application/json; charset=utf-8
       class="bg-gray-900 rounded border-primary-mid border mb-2"
     />
 
-    <p>Which will then make a request to the URL http://jsonplaceholder.typicode.com/todos/5, and the response will be displayed in the terminal, only showing the Content-Type headers.</p>
+    <p class="mb-3">Which will then make a request to the URL http://jsonplaceholder.typicode.com/todos/5, and the response will be displayed in the terminal, only showing the Content-Type headers.</p>
+
+    <p class="mb-3">End-to-end tests can be written using shell scripts, which can be added to your CI/CD pipelines.</p>
+
+    <Code
+      title={"Terminal"}
+      code={`#!/bin/bash
+output=$(sendex run tests/get-todo.yml --raw)
+desired_output=$(cat tests/get-todo.output)
+
+if [ "$output" = "$desired_output" ]; then
+    echo "PASS: get-todo matches expected output"
+else
+    echo "FAIL: get-todo does not match output"
+    exit 1
+fi`}
+      lang="sh"
+      class="bg-gray-900 rounded border-primary-mid border mb-2"
+    />
   </div>
 
   <div class="rounded-3xl bg-primary-light text-primary-dark mb-24 px-12 py-10 font-medium">

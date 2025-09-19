@@ -29,3 +29,8 @@
         max-width: 900px;
     }
 }
+
+@utility bg-radial {
+    --tw-gradient-position: in oklab;
+    background-image: radial-gradient(var(--tw-gradient-stops));
+}
