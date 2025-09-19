@@ -2,7 +2,7 @@
 
 @theme {
     --color-primary-dark: #293241;
-    --color-primary-mid: #617B9D;
+    --color-primary-mid: #3D5B81;
     --color-primary-light: #9BC0DA;
     --color-secondary: #C75940;
 }
@@ -33,4 +33,10 @@
 @utility bg-radial {
     --tw-gradient-position: in oklab;
     background-image: radial-gradient(var(--tw-gradient-stops));
+}
+
+.site-title {
+    img {
+        height: 22px;
+    }
 }

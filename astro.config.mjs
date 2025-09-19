@@ -13,9 +13,12 @@ export default defineConfig({
 				src: './src/assets/logo.svg',
 				replacesTitle: true,
 			},
-			// social: {
-			// 	github: 'https://github.com/hadlow/sendex',
-			// },
+			social: [
+				{ icon: 'seti:github', label: 'GitHub', href: 'https://github.com/hadlow/sendex' },
+			],
+			customCss: [
+				'./src/globals.css',
+			],
 			sidebar: [
 				{
 					label: 'Getting started',
